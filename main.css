@@ -1,21 +1,17 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Montserrat;
-    margin: 0;
-}
 
 #product-overview {
-    background: url(freedom.jpg);
+    background: url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box;
+    /* background-image: url("freedom.jpg");
     background-size: cover;
-    background-position: left 10% bottom 20%;
-    background-repeat: no-repeat;
+    background-position: left 10% bottom 20%; */
+    /* background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
     width: 100%;
     height: 528px;
     padding: 10px;
     margin-top: 43px;
+    /* border: 5px dashed red; */
     position: relative;
 }  
 
@@ -82,32 +78,14 @@ body {
 .plan-features {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .plan-features li {
     margin: 8px 0;
 }
 
-.button {
-    background: #0e4f1f;
-    color: white;
-    font: inherit;
-    border: 1px solid #0e4f1f;
-    padding: 8px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
-.button:hover,
-.button:active {
-    background: white;
-    color: #0e4f1f;
-}
-
-.button:focus {
-    outline: none;
-}
 
 #key-features {
     background: #ff1b68;
@@ -148,97 +126,4 @@ body {
     color: white;
     font-size: 20px;
 
-}
-
-.main-header {
-    background: #2ddf5c;
-    width: 100%;
-    padding: 8px 16px;
-}
-
-.main-content {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.main-header__brand {
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 74px);
-    vertical-align: middle;
-}
-
-.main-nav__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.main-nav__item {
-    display: inline-block;
-    margin: 0 16px;
-}
-
-.main-nav__item a {
-    text-decoration: none;
-    color: #0e4f1f;
-    font-weight: bold;
-    padding: 3px 0;
-}
-
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-    color: white;
-    border-bottom: 5px solid white;
-}
- 
-.main-nav_item--cta a {
-    color: white;
-    background: #ff1b68;
-    padding: 8px 16px;
-    border-radius: 8px;
-}
- 
-.main-nav_item--cta a:hover,
-.main-nav_item--cta a:active {
-    color: #ff1b68;
-    background: white;
-    border: none;
-
-}
-
-.main-footer {
-    background: black;
-    padding: 32px;
-    margin-top: 48px;
-}
-
-.main-footer__links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.main-footer__link {
-    display: inline-block;
-    margin: 0 16px;
-}
-
-.main-footer__link a {
-    color: white;
-    text-decoration: none;
-}
-
-.main-footer__link a:hover,
-.main-footer__link a:active {
-    color: #ccc;
 }
