@@ -5,7 +5,6 @@
 body {
     font-family: Montserrat;
     margin: 0;
- 
 }
 
 main {
@@ -33,7 +32,6 @@ main {
     padding: 0.5rem 1rem;
     z-index: 1;
 }
-
 
 .main-header > div {
     display: inline-block;
@@ -77,9 +75,6 @@ main {
 
 .main-nav {
     display: inline-block;
-    text-align: right;
-    width: calc(100%-44px);
-    vertical-align: middle;
 }
 
 .main-nav__items {
@@ -100,7 +95,6 @@ main {
     font-weight: bold;
     padding: 0.2rem 0;
 }
-
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
@@ -123,7 +117,19 @@ main {
     color: #ff1b68;
     background: white;
     border: none;
+}
 
+@media (min-width: 40rem) {
+    .toggle-button {
+      display: none;
+    }
+  
+    .main-nav {
+      display: inline-block;
+      text-align: right;
+      width: calc(100% - 44px);
+      vertical-align: middle;
+    }
 }
 
 .main-footer {
@@ -155,32 +161,32 @@ main {
 }
 
 .mobile-nav {
-    display: none;
-    position: fixed;
-    z-index: 101;
-    top: 0;
-    left: 0;
+   display: none;
+   position: fixed;
+   z-index: 101;
+   top: 0;
+   left: 0;
     background: white;
     width: 80%;
     height: 100vh;
-  }
+}
   
-  .mobile-nav__items {
+.mobile-nav__items {
     width: 90%;
     height: 100%;
     list-style: none;
     margin: 10% auto;
     padding: 0;
     text-align: center;
-  }
+}
   
-  .mobile-nav__item {
+.mobile-nav__item {
     margin: 1rem 0;
-  }
+}
   
-  .mobile-nav__item a {
+.mobile-nav__item a {
     font-size: 1.5rem;
-  }
+}
 
 
 .button {
@@ -204,23 +210,18 @@ main {
     outline: none;
 }
 
+.button[disabled] {
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
+}
+
 .open {
     display: block !important;
 }
 
 @media (min-width: 40rem) {
-
-    .toggle-button {
-        display: none;
-    }
-
-    .main-nav {
-        display: inline-block;
-        text-align: right;
-        width: calc(100% - 44px);
-        vertical-align: middle;
-    }
-
     .main-footer__link {
         display: inline-block;
         margin: 0 1rem;
